@@ -123,3 +123,15 @@ body {
         text-align: center;
     }
 }
+
+.hero-headshot {
+    max-width: 220px;
+    width: 100%;
+    border: 4px solid rgba(255,255,255,0.12);
+}
+
+@media (max-width: 991px) {
+    .hero-headshot {
+        max-width: 160px;
+    }
+}
