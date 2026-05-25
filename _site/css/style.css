@@ -1,0 +1,125 @@
+:root {
+    --primary: #5603AD;
+    --primary-light: #8367C7;
+    --accent: #D946EF;
+    --background: #f8f7fc;
+    --surface: #ffffff;
+    --text: #1f1f1f;
+    --muted: #6c757d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary), #7B2CBF);
+}
+
+.hero .glass-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 1rem;
+}
+
+.eyebrow {
+    letter-spacing: .2em;
+    font-size: 0.85rem;
+    color: #D4A5FF;
+}
+
+.section-header {
+    margin-bottom: 1.75rem;
+}
+
+.section-header h2,
+.process-card h3,
+.card-case h3 {
+    color: var(--primary);
+}
+
+.process-card,
+.card-case {
+    background: var(--surface);
+    border: none;
+}
+
+.process-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover,
+.card-case:hover {
+    transform: translateY(-6px);
+}
+
+.card-case {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-case .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.footer-links-label {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.footer-link-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+.site-footer {
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+@media (max-width: 767px) {
+    .hero-image {
+        text-align: center;
+    }
+}
